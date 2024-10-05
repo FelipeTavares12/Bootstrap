@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Bootstrap</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            margin-bottom: 80px; /* Espaço para o rodapé fixo */
+        }
+
+        .fixed-footer {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            background-color: #343a40;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Minha Página</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Sobre</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contato</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Carousel -->
+    <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="COMP.jpg" class="d-block w-100" alt="Imagem 1">
+            </div>
+            <div class="carousel-item">
+                <img src="OIP.jfif" class="d-block w-100" alt="Imagem 2">
+            </div>
+            <div class="carousel-item">
+                <img src="N_DADOS.jfif" class="d-block w-100" alt="Imagem 3">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Próximo</span>
+        </button>
+    </div>
+
+    <!-- Cards -->
+    <div class="container my-5">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="VSCODE.jfif" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Visual Studio Code</h5>
+                        <p class="card-text">HTML, CSS e JavaScript para criar sites dinâmicos e responsivos</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="S_E.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Engenharia de Software</h5>
+                        <p class="card-text">Projetar e implementar soluções de software robustas, utilizando as melhores práticas da engenharia de software</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="IA.avif" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Inteligência Artificial</h5>
+                        <p class="card-text">Tecnologia que está revolucionando o mundo</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="MOBILE.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Desenvolvimento Mobile</h5>
+                        <p class="card-text">Criar aplicativos móveis para Android e iOS utilizando frameworks modernos como Flutter e React Native</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="CIBERSECURITY.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Cibersegurança</h5>
+                        <p class="card-text">Proteja sistemas e dados com estratégias eficazes de segurança cibernética</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="Banco de dados.jfif" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Banco de Dados</h5>
+                        <p class="card-text">Conceitos de banco de dados relacionais e NoSQL, e aprenda a gerenciar grandes volumes de dados</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="Nuvem.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Computação em Nuvem</h5>
+                        <p class="card-text">Arquitetura de computação em nuvem com serviços como AWS, Azure e Google Cloud</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="C_Dados.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Ciência de Dados</h5>
+                        <p class="card-text">Analise dados, insights valiosos usando ferramentas de ciência de dados, como Python, R e SQL</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Accordion -->
+    <div class="container my-5">
+        <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        Programação para iniciantes. 
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <strong>Conceitos básicos de lógica de programação, inicie com uma linguagem como Python ou JavaScript e vá avançando para estruturas de dados, algoritmos e frameworks. Além disso, participe de projetos práticos e contribua para repositórios de código aberto. Plataformas como Codecademy, freeCodeCamp e Udemy oferecem cursos que podem ajudar nessa jornada</strong> 
+        
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Ferramentas essenciais para desenvolvedores
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <strong>Git: Sistema de controle de versão.
+                            <br>
+                            Visual Studio Code: Editor de código leve e poderoso.
+                            <br>
+                            Docker: Plataforma para criar, executar e gerenciar containers.
+                            <br>
+                            Postman: Ferramenta para testar APIs.
+                            <br>
+                            Figma: Ferramenta de design colaborativa para interface de usuário (UI).</strong> 
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        Tendências tecnológicas para o futuro
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <strong>Inteligência Artificial: Com avanços em aprendizado de máquina e redes neurais, a IA continuará a transformar indústrias.
+                            <br>
+                            Blockchain: Vai além das criptomoedas, com potencial em áreas como contratos inteligentes e cadeias de suprimentos.
+                            <br>
+                            Computação Quântica: A próxima fronteira de processamento de dados com potencial de resolver problemas complexos de forma exponencialmente mais rápida.
+                            <br>
+                            5G e IoT: A combinação de internet ultrarrápida com dispositivos conectados mudará a forma como vivemos e trabalhamos.
+                            <br>
+                            Cibersegurança: Com o aumento das ameaças digitais, a segurança continuará sendo uma prioridade crítica para empresas.</strong> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Rodapé fixo -->
+    <div class="fixed-footer">
+        <p>Rodapé fixo © 2024</p>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
